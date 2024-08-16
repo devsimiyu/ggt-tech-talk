@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GGT Shared Components</title>
+
+  <link rel="stylesheet" href="./dist/ggt-light-theme.css" id="theme-link">
+  <link rel="stylesheet" href="./dist/ggt-styles.css">
+</head>
+
+<body>
+  <h4>GGT Components</h4>
+
+  <ggt-button text="Greet"></ggt-button>
+  <ggt-theme></ggt-theme>
+
+  <script src="./dist/ggt-components.js"></script>
+
+  <script type="text/javascript">
+    const ggtButton = document.querySelector('ggt-button');
+
+    ggtButton.addEventListener('click', function (event) {
+      console.log('ggt-button says', event.detail);
+    });
+  </script>
+</body>
+
+</html>

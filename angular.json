@@ -32,7 +32,21 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              {
+                "input": "src/styles.scss",
+                "bundleName": "ggt-styles",
+                "inject": false
+              },
+              {
+                "input": "primeng/resources/themes/md-dark-indigo/theme.css",
+                "bundleName": "ggt-dark-theme",
+                "inject": false
+              },
+              {
+                "input": "primeng/resources/themes/md-light-indigo/theme.css",
+                "bundleName": "ggt-light-theme",
+                "inject": false
+              }
             ],
             "scripts": []
           },
@@ -50,15 +64,24 @@
                   "maximumError": "4kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "none",
+              "outputPath": {
+                "base": "dist",
+                "browser": ""
+              }
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "outputHashing": "none",
+              "outputPath": {
+                "base": "dist",
+                "browser": ""
+              }
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "development"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
