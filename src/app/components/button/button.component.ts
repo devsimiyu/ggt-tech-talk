@@ -21,9 +21,9 @@ import { RippleModule } from 'primeng/ripple';
 export class ButtonComponent {
 
   @Input() text = '';
-  @Output() click = new EventEmitter(undefined);
+  @Output() clicked = new EventEmitter(undefined);
 
   handleClick(): void {
-    this.click.emit('Jambo!');
+    this.clicked.emit('Jambo!');
   }
 }
