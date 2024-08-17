@@ -1,6 +1,6 @@
 # GGT Components
 
-- Tech Talk at Griffin Global Tech on building a shared UI library using Angular Elements.
+- Tech Talk at Griffin Global Tech on building a Shared UI Library using Angular Elements.
 - Angular Elements packages Angular components as Web Components, which is a web standard for defining custom HTML elements.
 
 ### Build
