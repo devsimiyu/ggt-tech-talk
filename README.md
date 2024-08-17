@@ -1,27 +1,15 @@
-# GgtComponents
+# GGT Components
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+- Tech Talk at Griffin Global Tech on building a shared UI library using Angular Elements.
+- Angular Elements packages Angular components as Web Components, which is a web standard for defining custom HTML elements.
 
-## Development server
+### Build
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Run `npm install` to download the necessary node modules.
+- For demonstration purposes, this project contains two sample Angular components packaged as Web Components: `ggt-button` and `ggt-theme`.
+- Package the sample Angular components using the `npm run package` command.
 
-## Code scaffolding
+### Run
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Once the `npm run package` command completes, the sample Web Components will be ready for use.
+- At the root of the project, there's an `index.html` file that can be opened in a browser to display the sample Web Components.
