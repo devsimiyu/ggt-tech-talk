@@ -3,11 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build",
-    "package": "npm run build && cat dist/{polyfills,main}.js > dist/ggt-components.js",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "package": "npm run build && cat dist/{polyfills,main}.js > dist/ggt-components.js"
   },
   "private": true,
   "dependencies": {
